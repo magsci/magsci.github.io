@@ -8,6 +8,9 @@ a{
     text-decoration: none;
     color: darkblue;
 }
+a:visited{
+    color: crimson;
+}
 h1, h2, h3{
     margin: 0;
 }
@@ -52,6 +55,13 @@ h1, h2, h3{
   padding: 14px 16px;
   text-decoration: none;
   min-width: 100px;
+  background-color: darkgreen;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+}
+#topnav li last-child{
+    border-right: none;
 }
 
 #topnav li a:hover:not(.active) {
@@ -133,7 +143,7 @@ h1, h2, h3{
 #footer{
     clear: both;
     padding: 10px;
-    background-color:  #999999;
+    background-color:  forestgreen;
     color:white;
     text-align: right;
         
