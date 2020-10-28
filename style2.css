@@ -44,7 +44,9 @@ header {
 }
 .item-1 {
     flex-grow: 4;
+    padding-left: 200px;
 }
+
 footer {
   height: 40px;
   background-color: forestgreen;
