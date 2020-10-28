@@ -1,57 +1,51 @@
+<!---this is to create the header and footer for the pages -->
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-    
-        <title>Physics</title>
-        <link rel= "stylesheet" type="text/css" href="style.css"/>
-    </head>
-    <body>
-        <img id = "logo" src = "magsci_logo5.png" alt = "logo" title="magsci logo"/>
-        <div id = "container">
-            <div id = "header">
+<html>
+<header class ="parent">
+    <link rel="stylesheet" type ="text/css" href="style2.css"/>
+    <script type ="text/javascript" src = "myscripts.js"></script>
+    <div id = "header_name">
                 <h1>Skills</h1>
-                                
+        
+            
+                               
             </div>
-            <div id = "content">
-                <div id = "nav">
+</header>
+
+<div class="container">
+    <div id = "nav" class = "item">
                     <h3> Navigation</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a class ="selected" href="">Skills for Maths</a></li>
                         <li><a href="maths.html">Maths</a></li>
-                    <br>
-                        <li><a href="#fractions">Fractions</a></li>
-                        <li><a  href="#algebra">Algebra</a></li>
-                        
-                        
+                        <li><a class ="selected" href="skills_m.html">Skills for Maths</a></li>
+                        <li><a href="exercises.m.html">Exercises</a></li>
+                        <li><img src = "magsci_logo5.png" alt = "logo" title="magsci logo"/></li>
                     </ul>
+                    
                 
                 </div>
-                
-                
-                
-                <div id = "main">
-                    <h2>Skills for Maths</h2>
-                    <p>Basic Fractions:</p>
+    <div class = "item-1" >
+                <h2>Home Page</h2> <br> <br>
+        
+                <p>Basic Fractions:</p>
                     <a name = "fractions"></a>
                       <br>
-                      <iframe width="560" height="315" src="maths/fractions1.mp4" frameborder="0" allowfullscreen></iframe>
+                      <iframe width="760" height="415" src="maths/fractions1.mp4" frameborder="0" allowfullscreen></iframe>
                     <br>
                     <br>
                     <p>Basic Algebra:</p>
                     <a name = "algebra"></a>
                       <br />
-                      <iframe width="560" height="315" src="maths/algebraf.mp4" frameborder="0" allowfullscreen></iframe>
+                      <iframe width="760" height="415" src="maths/algebraf.mp4" frameborder="0" allowfullscreen></iframe>
 
-                
-                </div>
-                <div 
-                     id = "footer">
-                    Copyright &copy;2020 MMStallard
-                
-                </div>
-            </div>
-        </div>
-    </body>
+    </div>
+    
+    </div>
+    
+<footer>
+     Copyright &copy;2020 MMStallard
+</footer>
+    
 
-</html>
