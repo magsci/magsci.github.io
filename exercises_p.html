@@ -1,31 +1,35 @@
+<!---this is to create the header and footer for the pages -->
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-    
-        <title>Exercises for Physics</title>
-        <link rel= "stylesheet" type="text/css" href="style.css"/>
-    </head>
-    <body>
-        <img id = "logo" src = "magsci_logo5.png" alt = "logo" title="magsci logo"/>
-        <div id = "container">
-            <div id = "header">
+<html>
+<header class ="parent">
+    <link rel="stylesheet" type ="text/css" href="style2.css"/>
+    <script type ="text/javascript" src = "myscripts.js"></script>
+    <div id = "header_name">
                 <h1>Exercises</h1>
-                                
+        
+            
+                               
             </div>
-            <div id = "content">
-                <div id = "nav">
+</header>
+
+<div class="container">
+    <div id = "nav" class = "item">
                     <h3> Navigation</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a class ="selected" href="">Exercises for Physics</a></li>
                         <li><a href="physics.html">Physics</a></li>
+                        <li><img src = "magsci_logo5.png" alt = "logo" title="magsci logo"/></li>
                     </ul>
+                    
                 
                 </div>
-                <div id = "main">
-                    <h2>Exercises for Physics</h2>
-                    <p>A level problems:<br><br></p>
-                    <div class="fbox">
+    <div class = "item-1" >
+                <h2>Exercises for Physics</h2> <br> <br>
+       
+                <p>A level problems:<br><br></p>
+                    <div id ="flexwidth" class="fbox">
                       
                     
                         <div id = "subb">
@@ -47,18 +51,14 @@
                       
                     <p>Problem Solving checklists:</p>
                     
-                    <iframe src="problem_solving/Checklist%201.pdf" width="100%" height="500px"></iframe>
+                    <iframe src="problem_solving/Checklist%201.pdf" width="70%" height="500px"></iframe>
 
+    </div>
+    
+    </div>
+    
+<footer>
+     Copyright &copy;2020 MMStallard
+</footer>
+    
 
-                
-                </div>
-                <div 
-                     id = "footer">
-                    Copyright &copy;2020 MMStallard
-                
-                </div>
-            </div>
-        </div>
-    </body>
-
-</html>
