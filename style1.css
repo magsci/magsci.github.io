@@ -8,6 +8,11 @@ html {
   margin: 0;
   padding: 0;
 }
+img{
+    max-width: 100%;
+    height: auto;
+    
+}
 body {
   display: flex;
   flex-direction: column;
@@ -15,11 +20,20 @@ body {
   background-color: antiquewhite;
 
 }
+@media (max-width: 600px) {
+  container{
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
 header {
   height: 100px;
   background-color: forestgreen;
 }
 .container {
+  -webkit-flex: 3;
+  -ms-flex: 3;    
   
   flex: 1;
   display: flex;
@@ -37,13 +51,26 @@ header {
     padding-top: 100px;
     padding-bottom:50px;
     padding-left: 20px;
-    width: 180px;
+    padding-right: 20px;
+    width: 5%;
     float:left;
     
     flex-grow: 1;   
 }
 .item-1 {
-    flex-grow: 4;
+    border-left: thick solid forestgreen;
+    padding-left: 50px;
+    border-right: thick solid forestgreen;
+    
+    
+    flex-grow: 3;
+}
+item-2 {
+    border-left: thick solid forestgreen;
+    padding-left: 50px;
+    border-right: thick solid forestgreen;
+    
+    flex-grow: 2;
 }
 footer {
   height: 40px;
@@ -192,10 +219,12 @@ h1, h2, h3{
 }
 
 #nav{
+    -webkit-flex: 1;
+    -ms-flex: 1;
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px
-    width: 180px;
+    /*width: 180px;*/
     float:left;
 }
 
@@ -246,6 +275,8 @@ h1, h2, h3{
 #subb{
     background-color: #999999;
     width: 70%;
+    padding-left: 20px;
+    min-height: 50%
     
     
 }
@@ -284,6 +315,13 @@ footer{
     padding: 10px;
     background-color:  forestgreen;
     color:white;
-    text-align: right;
+    text-align: center;
         
+}
+.flex-center{
+    align-content:center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex: initial;
 }
