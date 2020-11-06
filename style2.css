@@ -50,6 +50,13 @@ header {
     float:left;
     min-height: 70%;
 }
+.item-1 iframe{
+    top:0;
+    left: 0;
+    width: 20%;
+    height: 50%;
+    
+}
 
 footer {
   height: 40px;
