@@ -8,6 +8,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -19,6 +20,9 @@ header {
   height: 25%;
   background-color: forestgreen;
   min-width: 100%;
+}
+h2 img {
+    vertical-align: middle;
 }
 .container {
   
@@ -60,7 +64,7 @@ footer {
 }
 .parent {
   height: 10%;
-  /*display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;*/
   min-width: 100vw;
@@ -76,9 +80,11 @@ footer {
     background-color:forestgreen;
     color: white;
     text-align: center;
-    padding: 10px;
+    /*padding: 10px;
     height: 7vh;
-    min-width: 100%;
+    min-width: 100%;*/
+    padding-bottom: 20px;
+    height: 15vh;
 }
 a{
     text-decoration: none;
@@ -114,6 +120,16 @@ h1, h2, h3{
     color: white;
     text-align: center;
     padding: 10px;
+}
+#header_name{
+    background-color:forestgreen;
+    /*background: url(header10.png);*/
+    color: white;
+    text-align: center;
+    /*padding-top: 15px;*/
+    padding-bottom: 8px;
+    height: 15vh;
+    max-width: 100%;
 }
     
 #content{
