@@ -293,23 +293,23 @@ h1, h2, h3{
     
     
 }
-#objects {
+.objects {
   font-family: Arial, Helvetica, sans-serif;
   color: darkblue;    
   border-collapse: collapse;
   width: 70%;
 }
 
-#objects td, #objects th {
+.objects td, .objects th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#objects tr:nth-child(even){background-color: #f2f2f2;}
+.objects tr:nth-child(even){background-color: #f2f2f2;}
 
-#objects tr:hover {background-color: #ddd;}
+.objects tr:hover {background-color: #ddd;}
 
-#objects th {
+.objects th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
@@ -318,7 +318,7 @@ h1, h2, h3{
 }
 
 @media screen and (max-width:800px){
-    .parent, .container, .item, .item-1, .fbox{
+    .parent, .container, .item, .item-1,.objects .fbox{
         width: 100%;
         min-height: 100%;
     }
