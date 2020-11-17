@@ -303,6 +303,7 @@ h1, h2, h3{
 .objects td, .objects th {
   border: 1px solid #ddd;
   padding: 8px;
+  width: auto;    
 }
 
 .objects tr:nth-child(even){background-color: #f2f2f2;}
