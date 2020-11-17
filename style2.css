@@ -303,7 +303,7 @@ h1, h2, h3{
 .objects td, .objects th {
   border: 1px solid #ddd;
   padding: 8px;
-  width: auto;    
+  width: auto;  
 }
 
 .objects tr:nth-child(even){background-color: #f2f2f2;}
@@ -317,9 +317,13 @@ h1, h2, h3{
   background-color: forestgreen;
   color: white;
 }
+.img-responsive{
+    width: 100%;
+    height:auto;
+}
 
 @media screen and (max-width:800px){
-    .parent, .container, .item, .item-1,.objects .fbox{
+    .parent, .container, .item, .item-1, .objects, .ob .fbox{
         width: 100%;
         min-height: 100%;
     }
