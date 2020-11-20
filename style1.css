@@ -41,48 +41,63 @@ header {
   /*width:100%;*/
   margin-left: auto;
   margin-right: auto;
-  min-height: 70vh;
+  min-height: 100vh;
+  /*min-width: 100vw;*/
   background-color:antiquewhite;
 
 
 }
 
 .item {
-    padding-top: 100px;
-    padding-bottom:50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    /*padding-top: 100px;*/
+    /*padding-bottom:50px;*/
+    /*margin-left: 20px;
+    margin-right: 20px;*/
+    border-bottom: thick solid forestgreen;
     width: 10%;
     float:left;
+    min-height: 100vh;
+    /*padding-bottom:50px;*/
     
     
     /*flex-grow: 1;*/
-    /*background-color:gray;*/
+    /*background-color:red;*/
 }
 .item-1 {
     border-left: thick solid forestgreen;
-    padding-left: 50px;
+    border-bottom: thick solid forestgreen;
+    /*margin-left: 50px;*/
     /*border-right: thick solid forestgreen;*/
-    width: 38%;
+    width: 42.5%;
     float:left;
     background-color:antiquewhite;
     min-height: 100vh;
+    /*padding-bottom:50px;*/
+    /*background-color:greenyellow;*/
     
     
     /*flex-grow: 3;*/
+}
+ .item-1 h2, .item-2 h2{
+    color: forestgreen;
+    margin-left: 10px;
 }
 .item-2 {
     border-left: thick solid forestgreen;
-    padding-left: 50px;
+    /*margin-left: 50px;*/
     border-right: thick solid forestgreen;
-    width: 38%;
+    border-bottom: thick solid forestgreen;
+    width: 43%;
     float:left;
     background-color:antiquewhite;
     min-height: 100vh;
+    /*padding-bottom:50px;*/
+    /*background-color:yellow;*/
     
     
     /*flex-grow: 3;*/
 }
+
 footer {
   height: 40px;
   background-color: forestgreen;
@@ -145,7 +160,7 @@ h1, h2, h3{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  /*background-color: forestgreen;*/
+  background-color: forestgreen;
   
   top: 0;
   /*width: 1000px;*/
@@ -226,14 +241,17 @@ h1, h2, h3{
 }
 
 #nav {
-    /*-webkit-flex: 1;
-    -ms-flex: 1;*/
-    padding-top: 40px;
+    
+    border-left: thick solid forestgreen;
+    /*border-bottom: thick solid forestgreen;*/
+    /*padding-top: 40px;*/
     padding-left: 20px;
     padding-right: 20px;
+    /*padding-bottom: 20px;*/
     font-size: 20px;
-    border-left: thick solid forestgreen;
-    min-height: 100vh;
+    height: 100vh;
+    /*background-color:yellow;*/
+    
     
     /*width: 180px;*/
     float:left;
@@ -296,11 +314,13 @@ h1, h2, h3{
     background-color: #999999;
     width: 70%;
     padding-left: 20px;
-    min-height: 70%
+    min-height: 100%
     
     
 }
-
+.item-1 #subb, .item-2 #subb{
+    margin-left: 10px;
+}
 
 
 #info{
