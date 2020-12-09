@@ -82,6 +82,7 @@ header {
     color: forestgreen;
     margin-left: 10px;
 }
+
 .item-2 {
     border-left: thick solid forestgreen;
     /*margin-left: 50px;*/
@@ -96,6 +97,10 @@ header {
     
     
     /*flex-grow: 3;*/
+}
+.item h3{
+    color: forestgreen;
+    margin-left: 10px;
 }
 
 footer {
@@ -318,6 +323,10 @@ h1, h2, h3{
     
     
 }
+.subb{
+   padding-left: 100px;  
+}
+
 .item-1 #subb, .item-2 #subb{
     margin-left: 10px;
 }
