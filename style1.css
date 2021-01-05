@@ -31,7 +31,7 @@ header {
   height: 25%;
   background-color: forestgreen;
 }
-.container {
+.my_container {
   /*flex: 1;
   display: flex;
   flex-direction: row;
@@ -82,7 +82,6 @@ header {
     color: forestgreen;
     margin-left: 10px;
 }
-
 .item-2 {
     border-left: thick solid forestgreen;
     /*margin-left: 50px;*/
@@ -97,10 +96,6 @@ header {
     
     
     /*flex-grow: 3;*/
-}
-.item h3{
-    color: forestgreen;
-    margin-left: 10px;
 }
 
 footer {
@@ -119,7 +114,7 @@ footer {
 }
 
 
-.center {
+.my_center {
   /*background-color: forestgreen;*/
   width: 100%;
   height: 30%;
@@ -131,7 +126,7 @@ footer {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 20px;
-    height: 15vh;
+    height: 25vh;
     max-width: 100%;
 }
 a{
@@ -213,15 +208,15 @@ h1, h2, h3{
   text-decoration: none;
 }
 
-#topnav li a:hover, .dropdown:hover .dropbtn {
+#topnav li a:hover, .my_dropdown:hover .dropbtn {
   background-color:  #999999;
 }
 
-#topnav li.dropdown {
+#topnav li.my_dropdown {
   display: inline-block;
 }
 
-#topnav .dropdown-content {
+#topnav .my_dropdown-content {
   display: none;
   position: absolute;
   background-color: #999999;
@@ -231,7 +226,7 @@ h1, h2, h3{
   z-index: 1;
 }
 
-#topnav .dropdown-content a {
+#topnav .my_dropdown-content a {
   color: white;
   padding: 12px 16px;
   text-decoration: none;
@@ -239,9 +234,9 @@ h1, h2, h3{
   text-align: center;
 }
 
-#topnav .dropdown-content a:hover {background-color: #f1f1f1;}
+#topnav .my_dropdown-content a:hover {background-color: #f1f1f1;}
 
-#topnav .dropdown:hover .dropdown-content {
+#topnav .my_dropdown:hover .my_dropdown-content {
   display: block;
 }
 
@@ -317,15 +312,14 @@ h1, h2, h3{
 
 #subb{
     background-color: #999999;
-    width: 70%;
+    /*width: 70%;*/
     padding-left: 20px;
-    min-height: 100%
+    /*min-height: 100%*/
     
     
 }
 .subb{
-   padding-left: 50px; 
-   padding-right: 50px;    
+   padding-left: 100px;  
 }
 
 .item-1 #subb, .item-2 #subb{
@@ -360,9 +354,12 @@ footer{
     flex-direction: row;
     flex: initial;
 }
-
+.img-responsive{
+    width: 100%;
+    height:auto;
+}
 @media screen and (max-width:800px){
-     .parent, .container, .item, .item-1, .item-2{
+     .parent, .my_container, .item, .item-1, .item-2{
         width: 100%;
     }
 }
