@@ -404,8 +404,8 @@ footer{
     flex: initial;
 }
 .img-responsive{
-    width: 25%;
-    height:25%;
+    width: auto;
+    height: auto;
 }
 @media screen and (max-width:800px){
      .parent, .my_container, .item, .item-1, .item-2{
