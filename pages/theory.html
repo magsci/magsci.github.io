@@ -9,6 +9,8 @@
  <!--<script src="js/bootstrap.min.js"></script>-->   
     
   <link rel="stylesheet"  href="../css/style1.css"/>
+    <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
   <script type ="text/javascript" src = "../myscripts.js"></script>
 </head>
     <body>
@@ -67,28 +69,45 @@
   <div class="row">
     <div class="col-sm-6">
       
-        <h2>Temperature</h2> <br> 
+        <h2>Theory</h2> <br> 
 
-        <div id = "subb"><p id = "info"><br>To compare Earth’s temperature now and in the past, we need the current temperature of Earth and old temperature data. Temperature measurements are taken in different places using thermometers, which are reliable, to calculate an average. Satellites can get data from remote locations.   <br>Thermometers have been around for a few hundred years but care is needed with data from the past as things can change. Cities can be where once there were only fields. Methods can change as happened with sea temperature data.
+        <div id = "subb"><p id = "info"><br>The main equations:</p>
             <br>
-            <p id = "info"> We can get older data from what is known as proxy or indirect measurements, using things that we know that depend on temperature but occurred in the past, for example formation of tree rings. The width of tree rings depends on temperature as more growth occurs when it is warmer e.g. summertime, but this only works in places with seasons. Alternatively, the temperature in the past can be found by measuring the temperature of a borehole at different depths from top to bottom. Ice cores have bubbles of different gasses and their isotopes (different versions of an atom e.g. O<sub>16</sub> and O<sub>18</sub>
-). The proportion of particular isotopes in the cores at a particular depth can give the temperature in the past.<br>
-            <br> </p>
-            </div>
-                </div>
-    
+            
+            <p id= "info"><span class="math display">Steady state: <br>\[\left(1-\alpha(T)\right)Q=\epsilon\sigma
+        T^4\]</span></p>
+            <br>
+            <p id= "info"><span class="math display">Time evolution: <br>
+                \[C\frac{dT}{dt}=\left(1-\alpha\right)Q-\epsilon\sigma T^4\]</span><b>
+                 </b></p>
+            <br><p id= "info"><br><br>The steady state equation has on the left hand side the incident radiant energy less the fraction that is reflected. This is set equal to the outgoing longwave energy which is on the right hand side. In the case of the time evolution equation the change in temperature is caused by a  difference between the incident and outgoing radiation. The left hand side of this equation is the overall heat capacity of the earth multiplied by the change of temperature per unit time (namely the change in energy).<br><br></p>
+        
+            </div><br><br>
+            </div><br>
+        
+        
+                
     <div class="col-sm-6">
       
         <h2>..</h2> <br>
         <div id = "subb">
-            <br>
-            
-            <p id= "info">Indirect methods are reliable because thermometer measurements made in the recent past agree with the indirect methods. When temperature is plotted as a graph it has a hockey stick shape, showing small changes or almost steady temperatures from medieval times until recent times. The graph then shows a large increase in temperature, particularly since 1970s.
-We know that external events or radiative forcings can affect the climate. These could be events like eruptions of volcanoes or changes in the Earths orbit around the sun. Adding carbon dioxide (CO<sub>2</sub>
-) to the atmosphere is also a radiative forcing and recently human activity has led to a huge addition of CO<sub>2</sub> . Climate models use all these events to predict past and future temperatures.
+            <br> <p id= "info">Time evolution with feedback: <br>
             </p>
             <br>
-            <p id= "info">Measurements of temperature tell us that the Earth is warming. We know we can rely on proxy methods as they agree with actual measurements from recent time. Many external events can be the cause of warming, but it is only when climate models include CO<sub>2</sub> released by human activity that there is good agreement with past and recent climate data, showing that we humans are responsible for the recent increase in warming.</p>
+            <p id= "info"><span class="math display">\[C\frac{dT}{dt}=\left(1-\alpha(T)\right)Q-\epsilon\sigma T^4\]</span><br><br>How alpha could depend on temperature: <br></p>
+        <br>
+        <p id= "info" style="font-size:1.0vw;"><span class="math display">\[\alpha(T)=0.495 -0.205\tanh\left(\kappa\left(T-T_{c}\right)\right)\]</span></p>
+        <br>
+        <p id= "info" ><span class="math display">\[\kappa = 0.133 \hspace{10pt}and\hspace{10pt} T_{c}=275K\]</span></p><br>
+            <p id= "info" ><span class="math display">Alternatively : <br>\[\alpha(T)=0.7-0.4\frac{e^\frac{(T-265)}{5}}{1 + e^\frac{(T-265)}{5}}\]</span></p>
+            <p id= "info"><span class="math display">Or a linear regression such as : <br>\[\alpha(T)=a + bT\]</span> where a and b are constants</p>
+            <br>
+            <p id= "info" style="font-size:1.0vw;"><br><br>References<br><br> Chris Budd and Matt Griffith Models of a climate: Hot and Snowball Earth<br>
+https://people.bath.ac.uk/mascjb/PUSTalks/Autumn18a.pdf<br>
+
+Daniel Flath, Hans G Kaper, Frank Wattenberg, Esther Widiasih Energy Balance Models<br>
+http://archive.dimacs.rutgers.edu/MPE/CCModules/DIMACS-EBM_Teacher.pdf<br>
+</p><br><br> 
             
             
 
@@ -102,7 +121,9 @@ We know that external events or radiative forcings can affect the climate. These
         
         
 <div class="jumbotron bg-dark text-white text-center">
-    <div class="d-flex justify-content-between"><div class="p-2">Copyright &copy;2022 MMStallard
+    <div class="d-flex justify-content-between">
+        
+          <div class="p-2">Copyright &copy;2022 MMStallard
         </div></div>
             
     </div>
